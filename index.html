@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP3 Player</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Taking Whole body in a div -->
+    <div class="container-fluid body d-flex" style="height: 100vh;background:linear-gradient(to right bottom, #d13cff, #031f6a)!important;;">
+        
+        <!-- Player Container -->
+        <div class="rounded container shadow bg-primary player my-5 border d-flex flex-column pt-5">
+
+            <!-- Song Logo -->
+        <div class="logo px-4 d-flex justify-content-center">
+            <img id="logo" class="border border-success shadow rounded-circle mx-5" src="/Images/playerLogo.png" width="150" height="150">
+        </div>
+        <!-- Song-Name -->
+        <div class="songName container border mt-2 pt-2 px-0 shadow">
+        <marquee scrollamount="5" class="text-bg-dark" behavior="scroll" direction="rtl" id="title">Main Madine Chala, Main Madine Chala</marquee>
+        </div>
+
+        <!-- audio -->
+        <audio id="nt" src="/audios/naat1.mp3"></audio>
+
+
+
+
+
+        <!-- Controls -->
+        <div class="container buttons d-flex justify-content-around mt-5">
+            <img id="back-btn" width="40" src="/Images/fast-backward.png" class="shadow bg-light rounded" onclick="back();">
+            <img id="play-btn" width="40" src="/Images/play-button.png" class="shadow bg-light rounded">
+            <img id="next-btn" width="40" src="/Images/fast-forward.png" class="shadow bg-light rounded" onclick="next();">
+        </div>
+        
+        
+        
+        
+        
+        
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js
+    "></script>
+    <div data-video="VIDEO_ID" data-autoplay="0" data-loop="1" id="youtube-audio"></div>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="https://cdn.rawgit.com/labnol/files/master/yt.js"></script>
+
+</body>
+</html>

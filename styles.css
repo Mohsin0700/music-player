@@ -1,0 +1,48 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+.player {
+    height: 65vh;
+    width: 50vw;
+    background-color: #f4fcff !important;
+}
+
+
+.rotate-image {
+    animation: rotation 5s linear infinite;
+}
+
+.infinite {
+    animation-iteration-count: infinite;
+}
+
+.linear {
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+.songName {
+    height: 6vh;
+}
+
+marquee {
+    font-family: verdana;
+    font-weight: bold;
+}
+
+#back-btn:hover ,#play-btn:hover ,#next-btn:hover {
+    cursor: pointer;
+}
+#range {
+    width: 30vw;
+}
